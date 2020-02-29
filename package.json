@@ -1,0 +1,17 @@
+{
+  "name": "ts-graphql-starter",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:mattcubitt/ts-graphql-starter.git",
+  "author": "Matt Cubitt <matt.d.cubitt@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "server-dev": "yarn --cwd packages/server dev",
+    "client-dev": "yarn --cwd packages/client start",
+    "integration-test": "yarn --cwd packages/tests integration-test"
+  }
+}
